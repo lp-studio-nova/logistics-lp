@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>東都ロジスティクス株式会社 | 物流で企業の未来を支える</title>
-    <meta name="description" content="東都ロジスティクス株式会社は、安全・確実・迅速な物流サービスを提供しています。一般貨物輸送、定期配送、チャーター便など、BtoB向けの高品質な物流ソリューションをご提案します。">
+    <title>東都ロジスティクス株式会社 | 物流の未来を支えるパートナー</title>
+    <meta name="description"
+        content="東都ロジスティクス株式会社は、安全・確実・迅速な物流サービスを提供しています。輸送、倉庫管理、物流コンサルティングなど、トータル物流ソリューションをご提案します。">
     <!-- Google Fonts: Noto Sans JP & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- ヘッダー (固定ナビゲーション) -->
     <header class="header">
         <div class="header-container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-truck-fast"></i> 東都<span>ロジスティクス</span>
+                <i data-lucide="truck" class="logo-icon"></i>東都<span>ロジスティクス</span>
             </a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -42,15 +47,16 @@
     <!-- Hero セクション -->
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="物流トラックのイメージ">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+                alt="物流トラックのイメージ">
+            <!-- 視認性確保のためのオーバーレイ -->
             <div class="hero-overlay"></div>
         </div>
-        <div class="hero-content fade-in-up">
-            <h1 class="hero-title">物流で企業の未来を<br>支える</h1>
-            <p class="hero-subtitle">安全・確実・迅速な物流サービスで、<br>クライアントのビジネス成長を加速させます。</p>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">物流の未来を支える<br>パートナー</h1>
+            <p class="hero-subtitle">東都ロジスティクス株式会社<br>全国対応の物流ソリューション</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary btn-large">お問い合わせ</a>
-                <a href="#services" class="btn btn-outline btn-large">サービスを見る</a>
+                <a href="#services" class="btn btn-primary btn-large">サービスを見る</a>
             </div>
         </div>
     </section>
@@ -64,16 +70,17 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop" alt="倉庫のイメージ" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop"
+                        alt="倉庫のイメージ" loading="lazy">
                 </div>
                 <div class="about-content">
                     <h3 class="about-heading">創業25年、信頼と実績の<br>物流ソリューションカンパニー</h3>
                     <p class="about-text">東都ロジスティクス株式会社は、物流品質への徹底したこだわりと、常にお客様視点に立つ企業理念のもと、数多くの企業様の物流基盤を支えてまいりました。</p>
                     <p class="about-text">「届ける」ことの先にある、お客様の「安心」と「笑顔」のために。<br>私たちはこれからも、革新的かつ安全な配送サービスを提供し続けます。</p>
                     <ul class="about-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> 顧客第一の物流品質へのこだわり</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> 時代に合わせた柔軟な配送システム</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> 環境に配慮した持続可能な企業活動</li>
+                        <li><i data-lucide="check-circle" class="text-primary icon-list"></i>顧客第一の物流品質へのこだわり</li>
+                        <li><i data-lucide="check-circle" class="text-primary icon-list"></i>時代に合わせた柔軟な配送システム</li>
+                        <li><i data-lucide="check-circle" class="text-primary icon-list"></i>環境に配慮した持続可能な企業活動</li>
                     </ul>
                 </div>
             </div>
@@ -91,21 +98,34 @@
             <div class="service-cards">
                 <!-- サービス 1 -->
                 <div class="service-card hover-lift">
-                    <div class="service-icon"><i class="fa-solid fa-truck"></i></div>
-                    <h3 class="service-name">一般貨物輸送</h3>
-                    <p class="service-description">工場から倉庫、倉庫から店舗など、あらゆる貨物を安全・確実に輸送します。多品種・小ロットから大ロットまで柔軟に対応可能です。</p>
+                    <div class="service-icon"><i data-lucide="truck"></i></div>
+                    <h3 class="service-name">輸送サービス</h3>
+                    <p class="service-description">工場から店舗まで、多岐にわたる貨物を安全かつ確実に輸送。ロットサイズに関わらず、最適な配車と経路で全国対応いたします。</p>
                 </div>
                 <!-- サービス 2 -->
                 <div class="service-card hover-lift">
-                    <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
-                    <h3 class="service-name">定期配送サービス</h3>
-                    <p class="service-description">指定されたルート・時間帯での定期的な集荷と配送を行います。ルート最適化により、物流コスト削減と効率化を実現します。</p>
+                    <div class="service-icon"><i data-lucide="package"></i></div>
+                    <h3 class="service-name">倉庫管理</h3>
+                    <p class="service-description">最新のWMS（倉庫管理システム）を用いた、高精度な在庫管理と入出庫オペレーション。厳格な品質管理で保管環境を維持します。</p>
                 </div>
                 <!-- サービス 3 -->
                 <div class="service-card hover-lift">
-                    <div class="service-icon"><i class="fa-solid fa-truck-plane"></i></div>
-                    <h3 class="service-name">チャーター便</h3>
-                    <p class="service-description">車両を1台貸し切る専属便サービスです。緊急配送や特殊な荷物、厳密な温度管理が必要な輸送など、個別のご要望に最適です。</p>
+                    <div class="service-icon"><i data-lucide="briefcase"></i></div>
+                    <h3 class="service-name">物流コンサルティング</h3>
+                    <p class="service-description">サプライチェーン全体を見直し、保管・配送の効率化、物流コスト削減に向けた最適かつ戦略的なトータルソリューションをご提案します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 追加された CTA セクション (Servicesセクションの直後) -->
+    <section class="cta-section">
+        <div class="container fade-in">
+            <div class="cta-content">
+                <h2 class="cta-title">物流の課題を解決します</h2>
+                <p class="cta-desc">輸送・倉庫・配送まで<br>トータル物流サービスをご提供します。</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-inverse btn-large">お問い合わせ</a>
                 </div>
             </div>
         </div>
@@ -143,7 +163,7 @@
         </div>
     </section>
 
-    <!-- Works セクション -->
+    <!-- Works セクション (刷新) -->
     <section class="section works bg-light" id="works">
         <div class="container fade-in">
             <div class="section-header">
@@ -154,34 +174,34 @@
                 <!-- 実績 1 -->
                 <div class="work-card">
                     <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2065&auto=format&fit=crop" alt="食品メーカー様 定期配送" loading="lazy">
-                        <div class="work-tag">定期配送</div>
+                        <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop"
+                            alt="配送センター運営" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h3 class="work-title">A社様（大手食品メーカー）</h3>
-                        <p class="work-desc">関東圏内の各スーパーマーケットへの日次ルート配送を担当。厳格な温度管理と定時納品を実現しています。</p>
+                        <h3 class="work-title">配送センター運営</h3>
+                        <p class="work-desc">大手小売業様の専用物流センターを一括委託にて運営。日々のピッキングから各店舗への配送まで、一貫したサプライチェーンをサポートしています。</p>
                     </div>
                 </div>
                 <!-- 実績 2 -->
                 <div class="work-card">
                     <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" alt="建築資材メーカー様 一般貨物" loading="lazy">
-                        <div class="work-tag">一般貨物</div>
+                        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
+                            alt="大規模倉庫物流" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h3 class="work-title">B工業様（建築資材メーカー）</h3>
-                        <p class="work-desc">工場で生産された重量資材を全国の工事現場へ直行輸送。安全第一の荷扱いが高く評価されています。</p>
+                        <h3 class="work-title">大規模倉庫物流</h3>
+                        <p class="work-desc">複数メーカー様の商材を保管する広域物流拠点の管理。温度管理システムを導入し、厳格な品質基準をクリアする高機能な保管体制を構築しました。</p>
                     </div>
                 </div>
                 <!-- 実績 3 -->
                 <div class="work-card">
                     <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1494412519320-ce32eb8d5f3d?q=80&w=2070&auto=format&fit=crop" alt="ITデバイス輸入企業様 チャーター便" loading="lazy">
-                        <div class="work-tag">チャーター便</div>
+                        <img src="https://images.unsplash.com/photo-1494412519320-ce32eb8d5f3d?q=80&w=2070&auto=format&fit=crop"
+                            alt="全国輸送ネットワーク" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h3 class="work-title">C商事様（精密機器商社）</h3>
-                        <p class="work-desc">空港から保管倉庫へのチャーター輸送。振動に弱い精密機器をエアサス車で安全・確実にお届けしています。</p>
+                        <h3 class="work-title">全国輸送ネットワーク</h3>
+                        <p class="work-desc">製造業の工場間やエンドユーザーへの長距離インフラ輸送。幹線輸送と地域配送の連携により、最適かつシームレスな広域輸送網を提供しています。</p>
                     </div>
                 </div>
             </div>
@@ -228,19 +248,6 @@
         </div>
     </section>
 
-    <!-- CTA セクション -->
-    <section class="cta-section">
-        <div class="container fade-in">
-            <div class="cta-content">
-                <h2 class="cta-title">御社の物流課題、私たちにご相談ください。</h2>
-                <p class="cta-desc">最適な物流ソリューションでビジネスを強力にサポートします。<br>お見積りやサービス詳細につきましては、お気軽にお問い合わせください。</p>
-                <div class="cta-actions">
-                    <a href="#contact" class="btn btn-primary btn-large">無料でお問い合わせ・お見積り</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact セクション -->
     <section class="section contact bg-light" id="contact">
         <div class="container fade-in">
@@ -253,11 +260,13 @@
                 <form class="contact-form" action="#" method="POST">
                     <div class="form-group">
                         <label for="name" class="form-label">会社名・お名前 <span class="required">必須</span></label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="例：東都ロジスティクス 山田太郎" required>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="例：東都ロジスティクス 山田太郎"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">メールアドレス <span class="required">必須</span></label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="例：info@example.com" required>
+                        <input type="email" id="email" name="email" class="form-control"
+                            placeholder="例：info@example.com" required>
                     </div>
                     <div class="form-group">
                         <label for="category" class="form-label">お問い合わせ種別</label>
@@ -269,12 +278,13 @@
                                 <option value="recruit">採用について</option>
                                 <option value="other">その他のお問い合わせ</option>
                             </select>
-                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                            <i data-lucide="chevron-down" class="select-icon"></i>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
-                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="具体的なお問い合わせ内容をご記入ください。" required></textarea>
+                        <textarea id="message" name="message" class="form-control" rows="6"
+                            placeholder="具体的なお問い合わせ内容をご記入ください。" required></textarea>
                     </div>
                     <div class="form-submit">
                         <button type="submit" class="btn btn-primary btn-large btn-block">送信する</button>
@@ -284,15 +294,18 @@
         </div>
     </section>
 
-    <!-- フッター -->
+    <!-- フッター (強化) -->
     <footer class="footer">
         <div class="container fade-in">
             <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="year"></span> Touto Logistics Co.,Ltd. All Rights Reserved.</p>
+                <a href="#" class="footer-logo">
+                    <i data-lucide="truck" class="footer-logo-icon"></i>東都ロジスティクス
+                </a>
                 <div class="footer-links">
-                    <a href="#">プライバシーポリシー</a>
-                    <a href="#">サイトマップ</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
+                <p class="copyright">&copy; 2026 Touto Logistics Co., Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -300,4 +313,5 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>

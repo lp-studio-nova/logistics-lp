@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------------------------
+    // 0. Lucide Icons の初期化
+    // ----------------------------------------------------------------------
+    lucide.createIcons();
+
+    // ----------------------------------------------------------------------
     // 1. スクロール時のヘッダースタイル変更
     // ----------------------------------------------------------------------
     const header = document.querySelector('.header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -40,21 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. スムーススクロール (オフセット考慮)
     // ----------------------------------------------------------------------
     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
-    
+
     smoothScrollLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            
+
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // 固定ヘッダーの高さを取得（適宜調整）
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-                
+
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: "smooth"
@@ -73,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
@@ -87,12 +92,4 @@ document.addEventListener('DOMContentLoaded', () => {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
-
-    // ----------------------------------------------------------------------
-    // 5. フッターの年号自動更新
-    // ----------------------------------------------------------------------
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
 });
